@@ -1,2 +1,6 @@
 <Solution>
+  <Folder Name="/src/" />
+  <Folder Name="/src/Core/">
+    <Project Path="src/Core/Fediva.Domain/Fediva.Domain.csproj" />
+  </Folder>
 </Solution>
