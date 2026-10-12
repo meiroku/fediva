@@ -3,4 +3,8 @@
   <Folder Name="/src/Core/">
     <Project Path="src/Core/Fediva.Domain/Fediva.Domain.csproj" />
   </Folder>
+  <Folder Name="/tests/" />
+  <Folder Name="/tests/Unit/">
+    <Project Path="tests/Unit/Fediva.Domain.UnitTests/Fediva.Domain.UnitTests.csproj" />
+  </Folder>
 </Solution>
