@@ -2,6 +2,7 @@
   <Folder Name="/src/" />
   <Folder Name="/src/Core/">
     <Project Path="src/Core/Fediva.Domain/Fediva.Domain.csproj" />
+    <Project Path="src/Core/Fediva.Application/Fediva.Application.csproj" />
   </Folder>
   <Folder Name="/tests/" />
   <Folder Name="/tests/Unit/">
