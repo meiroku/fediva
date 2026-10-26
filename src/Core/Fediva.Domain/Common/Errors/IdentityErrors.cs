@@ -1,4 +1,4 @@
-﻿namespace Fediva.Domain.Common.Errors;
+namespace Fediva.Domain.Common.Errors;
 
 public static class IdentityErrors
 {
@@ -32,6 +32,33 @@ public static class IdentityErrors
         new(
             "identity.display_name.too_long",
             "The display name exceeds the maximum permitted length.",
+            ErrorType.Validation
+        );
+
+    public static Error DisplayNameRequired { get; } =
+        new("identity.display_name.required", "A display name is required.", ErrorType.Validation);
+
+    public static Error BioTooLong { get; } =
+        new(
+            "identity.actor_profile.bio_too_long",
+            "The actor bio exceeds the maximum permitted length.",
+            ErrorType.Validation
+        );
+
+    public static Error ActorNotFound { get; } =
+        new("identity.actor.not_found", "The required actor is not found.", ErrorType.NotFound);
+
+    public static Error ActorStatusTransitionInvalid { get; } =
+        new(
+            "identity.actor.status_transition_invalid",
+            "The actor status cannot be changed from the current state.",
+            ErrorType.Conflict
+        );
+
+    public static Error ActorMigrationDestinationInvalid { get; } =
+        new(
+            "identity.actor.migration_destination_invalid",
+            "The destination actor for migration is invalid.",
             ErrorType.Validation
         );
 
