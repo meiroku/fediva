@@ -65,4 +65,22 @@ public static class ContentErrors
             "Only the reply author can edit or delete this reply.",
             ErrorType.Forbidden
         );
+
+    // Reaction関連エラー
+    public static Error ReactionNotFound { get; } =
+        new(
+            "content.reaction.not_found",
+            "The requested reaction was not found.",
+            ErrorType.NotFound
+        );
+
+    public static Error ReactionAlreadyExists { get; } =
+        new("content.reaction.already_exists", "The reaction already exists.", ErrorType.Conflict);
+
+    public static Error ReactionActorMismatch { get; } =
+        new(
+            "content.reaction.actor_mismatch",
+            "Only the reaction author can remove this reaction.",
+            ErrorType.Forbidden
+        );
 }
