@@ -1,0 +1,20 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="TngTech.ArchUnitNET" />
+    <PackageReference Include="TngTech.ArchUnitNET.TUnit" />
+    <PackageReference Include="TUnit" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\src\Core\Fediva.Domain\Fediva.Domain.csproj" />
+    <ProjectReference Include="..\..\..\src\Core\Fediva.Application\Fediva.Application.csproj" />
+    <ProjectReference Include="..\..\..\src\Protocols\Fediva.Protocol.ActivityPub\Fediva.Protocol.ActivityPub.csproj" />
+    <ProjectReference Include="..\..\..\src\Protocols\Fediva.Protocol.ATProtocol\Fediva.Protocol.ATProtocol.csproj" />
+  </ItemGroup>
+</Project>

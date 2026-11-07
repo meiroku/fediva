@@ -1,0 +1,12 @@
+name: ci-fast
+on: [push, pull_request]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-dotnet@v4
+        with: { global-json-file: global.json }
+      - run: dotnet restore Fediva.slnx
+      - run: dotnet build Fediva.slnx -c Release --no-restore
+      - run: dotnet test Fediva.slnx -c Release --no-build

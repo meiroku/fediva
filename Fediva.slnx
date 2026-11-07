@@ -1,2 +1,20 @@
 <Solution>
+  <Folder Name="/src/" />
+  <Folder Name="/src/Core/">
+    <Project Path="src/Core/Fediva.Application/Fediva.Application.csproj" />
+    <Project Path="src/Core/Fediva.Domain/Fediva.Domain.csproj" />
+  </Folder>
+  <Folder Name="/src/Hosts/">
+    <Project Path="src/Hosts/Fediva.AppHost/Fediva.AppHost.csproj" />
+    <Project Path="src/Hosts/Fediva.ServiceDefaults/Fediva.ServiceDefaults.csproj" />
+    <Project Path="src/Hosts/Fediva.WebHost/Fediva.WebHost.csproj" />
+  </Folder>
+  <Folder Name="/src/Protocols/">
+    <Project Path="src/Protocols/Fediva.Protocol.ActivityPub/Fediva.Protocol.ActivityPub.csproj" />
+    <Project Path="src/Protocols/Fediva.Protocol.ATProtocol/Fediva.Protocol.ATProtocol.csproj" />
+  </Folder>
+  <Folder Name="/tests/" />
+  <Folder Name="/tests/Architecture/">
+    <Project Path="tests/Architecture/Fediva.Architecture.Tests/Fediva.Architecture.Tests.csproj" />
+  </Folder>
 </Solution>
